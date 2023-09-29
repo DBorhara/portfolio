@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/components/ThemeProvider";
+import { BsSun as Sun, BsMoon as Moon } from "react-icons/bs";
 
 const ModeToggle: React.FC = () => {
   const { setTheme } = useTheme();

@@ -1,5 +1,4 @@
 import React from "react";
-// Components
 import Box from "@/components/Resume/Box";
 import ContactIcon from "@/components/Resume/ContactIcon";
 import Section from "@/components/Resume/Section";
@@ -10,6 +9,9 @@ import phone from "@/LottieFiles/phone.json";
 import github from "@/LottieFiles/github.json";
 // Types
 import { IconProps } from "@/types";
+import { Button } from "@/components/ui/button";
+import { DownloadCloud } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ICONS: IconProps[] = [
   { data: phone, label: "917-2047-1702" },
@@ -30,13 +32,19 @@ const ICONS: IconProps[] = [
 const Resume: React.FC = () => {
   return (
     <div className="flex flex-col items-center border border-purple-500 shadow-2xl p-8 rounded-lg max-w-prose mx-auto mt-10">
-      <h1 className="text-5xl font-bold mb-4 text-purple-500">Depak Borhara</h1>
+      <h1 className="text-5xl font-bold mb-5 text-purple-500">Depak Borhara</h1>
 
       <div className="grid grid-cols-4 gap-6 justify-items-center text-sm dark:text-gray-200 mb-6">
         {ICONS.map((icon, idx) => (
           <ContactIcon key={idx} {...icon} />
         ))}
       </div>
+      <Link to="/Resume_Depak_Borhara.pdf" target="_blank" download>
+        <Button className="mt-5 bg-black text-white hover:bg-purple-500 dark:bg-purple-500 dark:hover:bg-white  dark:hover:text-purple-500">
+          <DownloadCloud className="mr-2.5" />
+          Download Resume
+        </Button>
+      </Link>
 
       <Section header="Professional Summary">
         <p className="text-lg dark:text-white">
@@ -168,7 +176,7 @@ const Resume: React.FC = () => {
       <Section header="Volunteer">
         <div className="space-y-4">
           <Box
-            title=" Pursuit | Technical Volunteer | Long Island City, NY (2/20 –
+            title="Pursuit | Technical Volunteer | Long Island City, NY (2/20 –
               Present)"
           >
             <ul className="dark:text-white">

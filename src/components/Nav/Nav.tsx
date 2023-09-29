@@ -1,7 +1,5 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
-import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -9,83 +7,36 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 import { ListItemProps } from "@/types";
+import { routes } from "@/lib/data";
 
 const Nav: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="mx-6 flex">
-      <div>
-        <div>
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    " cursor-pointer"
-                  )}
-                  onClick={() => navigate("/")}
-                >
-                  Home
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    " cursor-pointer"
-                  )}
-                  onClick={() => navigate("/about")}
-                >
-                  About
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    " cursor-pointer"
-                  )}
-                  onClick={() => navigate("/projects")}
-                >
-                  Projects
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    " cursor-pointer"
-                  )}
-                  onClick={() => navigate("/resume")}
-                >
-                  Resume
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    " cursor-pointer"
-                  )}
-                  onClick={() => navigate("/contact")}
-                >
-                  Contact
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
-      </div>
+      <NavigationMenu>
+        <NavigationMenuList>
+          {routes.map((route) => (
+            <NavigationMenuItem key={route.path}>
+              <NavigationMenuLink
+                className={cn(navigationMenuTriggerStyle(), "cursor-pointer")}
+                onClick={() => navigate(route.path)}
+              >
+                {route.label}
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+          ))}
+        </NavigationMenuList>
+      </NavigationMenu>
     </div>
   );
 };
 
 export default Nav;
 
-const ListItem = React.forwardRef<React.ElementRef<"a">, ListItemProps>(
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
   ({ className, title, children, ...props }, ref) => {
     return (
       <li>
@@ -108,4 +59,5 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, ListItemProps>(
     );
   }
 );
+
 ListItem.displayName = "ListItem";

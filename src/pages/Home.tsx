@@ -1,10 +1,10 @@
 import React from "react";
 import Lottie from "lottie-react";
 import SpaceBoy from "../LottieFiles/SpaceBoy.json";
-import Avatar from "../assets/Avatar.png";
-import Typed from "@/components/Typed";
-import Tilt from "react-parallax-tilt";
 import { SiVim } from "react-icons/si";
+import Tilt from "react-parallax-tilt";
+import Typed from "@/components/Typed";
+import Avatar from "../assets/Avatar.png";
 
 const Home: React.FC = () => {
   return (
@@ -17,18 +17,19 @@ const Home: React.FC = () => {
           Hi There!
         </h1>
         <h1 className="font-semibold text-3xl tracking-wider pt-2.5">
-          I'M <b className=" text-purple-500">DEPAK BORHARA</b>
+          I'M <b className="text-purple-500">DEPAK BORHARA</b>
         </h1>
         <Typed />
       </div>
       <div className="flex justify-evenly min-h-[80vh] mt-14 items-center p-6">
         <div className="w-1/2 font-medium text-lg leading-7 tracking-wider">
           <h1 className="text-[35px] font-semibold pb-10">
-            Brief <b className=" text-purple-500">introduction</b>
+            Brief <b className="text-purple-500">introduction</b>
           </h1>
           <div>
             I love learning and challenging myself to grow. I like to take
-            practical ideas and turning them into reality with code. I
+            practical ideas and turning them into reality with code. I also
+            enjoy colors and design, but engineering is my first love.
             <br />
             <br />I am fluent in <b>Javascript</b> and <b>Typescript</b>,
             proficient in <b>Go</b>, and I am working on getting a new role
@@ -46,7 +47,11 @@ const Home: React.FC = () => {
           </div>
         </div>
         <Tilt>
-          <img className="w-72" src={Avatar} alt="Avatar" />
+          <img
+            className="w-72 shadow-2xl dark:bg-white rounded-full"
+            src={Avatar}
+            alt="Avatar"
+          />
         </Tilt>
       </div>
     </div>

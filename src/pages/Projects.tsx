@@ -11,7 +11,6 @@ const Projects: React.FC = () => {
     try {
       const ghrepos = await octokit.request("GET /users/DBorhara/starred", {});
       setStarredRepos(ghrepos.data);
-
       setIsLoading(false);
     } catch (error) {
       console.error(error);
@@ -24,7 +23,7 @@ const Projects: React.FC = () => {
   if (isLoading) return <Loading />;
   return (
     <div>
-      <h1 className="text-center mt-10 leading-normal tracking-wider text-3xl">
+      <h1 className="text-center mt-10 leading-normal tracking-wider text-5xl">
         My <b className="text-purple-500">Projects</b>
       </h1>
       <div className="flex flex-wrap justify-center mx-auto my-6 px-5%">

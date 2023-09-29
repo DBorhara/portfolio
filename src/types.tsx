@@ -5,9 +5,14 @@ export interface navMenuProps {
   description: string;
 }
 
-export interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
+export interface NavItem {
+  label: string;
+  path: string;
+}
+
+export interface ListItemProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   title: string;
-  children: React.ReactNode;
 }
 
 export type SkillName =
@@ -30,7 +35,7 @@ export type SkillName =
   | "TailwindCSS";
 
 export interface SkillProps {
-  skill: SkillName;
+  name: SkillName;
   url: string;
 }
 
