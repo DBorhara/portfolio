@@ -11,8 +11,7 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
-import { url } from "inspector";
-import { SiGithub } from "react-icons/si";
+
 import { BsBrowserChrome } from "react-icons/bs";
 
 const Projects: React.FC = () => {
