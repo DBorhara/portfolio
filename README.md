@@ -6,7 +6,7 @@ This is my personal portfolio project, built using a combination of modern web t
 
 ### Core Framework & Language
 
-[React](https://react.dev/) - A JavaScript library for building user interfaces.
+[React](https://react.dev/) - A JavaScript library for building user interfaces.  
 [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that adds optional static typing.
 
 ### Development & Build Tools
@@ -15,9 +15,9 @@ This is my personal portfolio project, built using a combination of modern web t
 
 ### UI/Design
 
-[Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-[ShadCN](https://ui.shadcn.com/) - Beautifully designed components built with Radix UI and Tailwind CSS.
-[Lottie](https://airbnb.design/lottie/) - Animation Library to bring svg's to life.
+[Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.  
+[ShadCN](https://ui.shadcn.com/) - Beautifully designed components built with Radix UI and Tailwind CSS.  
+[Lottie](https://airbnb.design/lottie/) - Animation Library to bring svg's to life.  
 [React Icons](https://react-icons.github.io/react-icons) - React Library for Popular Icons.
 
 ### Routing & Navigation
@@ -26,12 +26,12 @@ This is my personal portfolio project, built using a combination of modern web t
 
 ### API & Communication
 
-[Emailjs](https://www.emailjs.com/) - Email Service API
+[Emailjs](https://www.emailjs.com/) - Email Service API  
 [Octokit](https://github.com/octokit) - Official clients for the GitHub API.
 
 ### Validation & Schema
 
-[React-Hook-Form](https://react-hook-form.com/) - A react library for form state management and validation
+[React-Hook-Form](https://react-hook-form.com/) - A react library for form state management and validation.  
 [Zod](https://zod.dev/) - A TypeScript-first schema declaration and validation library.
 
 ## Setup & Installation
