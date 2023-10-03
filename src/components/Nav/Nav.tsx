@@ -43,7 +43,7 @@ const Nav: React.FC = () => {
             <div className="hamburger-icon"></div>
           </div>
         </SheetTrigger>
-        <SheetContent className="w-1/3">
+        <SheetContent className={cn("w-1/3")}>
           <NavigationMenu>
             <NavigationMenuList className="flex flex-col pt-10">
               {routes.map((route) => (
