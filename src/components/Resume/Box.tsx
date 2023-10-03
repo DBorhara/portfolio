@@ -8,7 +8,7 @@ const Box: React.FC<BoxProps> = ({ title, children }) => (
         {title}
       </h3>
     )}
-    <div className="dark:text-white">{children}</div>
+    <div className="dark:text-white text-sm md:text-base">{children}</div>
   </div>
 );
 

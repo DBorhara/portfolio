@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="hidden flex-col md:flex">
+      <div className="flex flex-col">
         <NavBar />
         <AppRouter />
         <Footer />

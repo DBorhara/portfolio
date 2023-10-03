@@ -65,10 +65,10 @@ const Contact: React.FC = () => {
     }
   };
   return (
-    <div className="flex flex-col items-center  mt-10">
-      <Card className="w-7/12 border border-purple-500 shadow-2xl rounded-lg p-8 max-w-prose mx-auto">
+    <div className="flex flex-col items-center mt-10">
+      <Card className="md:w-7/12 border border-purple-500 shadow-2xl rounded-lg p-8 max-w-prose mx-auto">
         <CardHeader className="text-5xl flex flex-row justify-center items-center">
-          <h1 className="text-5xl font-semibold pb-10">
+          <h1 className="md:text-5xl font-semibold">
             Contact <b className=" text-purple-500">Me</b>
           </h1>
         </CardHeader>
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
             <form
               ref={formRef}
               onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-2 flex flex-col justify-center items-center"
+              className="space-y-4 flex flex-col justify-center items-center"
             >
               <FormField
                 control={form.control}
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                       <FormLabel className="pb-3">Email</FormLabel>
                       <FormControl>
                         <Input
-                          className="w-1/3 dark:border-purple-500 "
+                          className=" dark:border-purple-500 "
                           placeholder="luffy@strawhat.com"
                           {...field}
                         />
@@ -103,11 +103,11 @@ const Contact: React.FC = () => {
                 name="message"
                 render={({ field }) => (
                   <div className="w-full">
-                    <FormItem className="flex flex-col items-center mt-10">
+                    <FormItem className="flex flex-col items-center">
                       <FormLabel className="pb-3">Message</FormLabel>
                       <FormControl>
                         <Textarea
-                          className="w-2/3 h-48 dark:border-purple-500"
+                          className=" h-48 dark:border-purple-500"
                           placeholder="Hello. I know where the One Piece is..."
                           {...field}
                         />
@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
                 )}
               />
               <Button
-                className="bg-black text-white hover:bg-purple-500 dark:bg-purple-500 dark:hover:bg-white  dark:hover:text-purple-500"
+                className=" bg-black text-white hover:bg-purple-500 dark:bg-purple-500 dark:hover:bg-white  dark:hover:text-purple-500"
                 type="submit"
               >
                 Submit

@@ -8,8 +8,8 @@ import { SkillName } from "@/types";
 const About: React.FC = () => {
   return (
     <>
-      <div className="flex justify-evenly min-h-[80vh] items-center p-6">
-        <div className="w-1/2 font-medium text-lg leading-7 tracking-wider">
+      <div className="flex flex-col md:flex-row justify-evenly min-h-[80vh] items-center p-6">
+        <div className="md:w-1/2 font-medium text-lg leading-7 tracking-wider pb-10 md:pb-0 ">
           <h1 className="text-3xl font-semibold pb-10">
             Get to <b className=" text-purple-500">know</b> me!
           </h1>

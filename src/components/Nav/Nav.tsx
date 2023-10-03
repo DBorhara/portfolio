@@ -10,26 +10,63 @@ import {
 import { cn } from "@/lib/utils";
 import { ListItemProps } from "@/types";
 import { routes } from "@/lib/data";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "../ui/sheet";
 
 const Nav: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="mx-6 flex">
-      <NavigationMenu>
-        <NavigationMenuList>
-          {routes.map((route) => (
-            <NavigationMenuItem key={route.path}>
-              <NavigationMenuLink
-                className={cn(navigationMenuTriggerStyle(), "cursor-pointer")}
-                onClick={() => navigate(route.path)}
-              >
-                {route.label}
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          ))}
-        </NavigationMenuList>
-      </NavigationMenu>
+      <div className={"hidden md:flex"}>
+        <NavigationMenu>
+          <NavigationMenuList>
+            {routes.map((route) => (
+              <NavigationMenuItem key={route.path}>
+                <NavigationMenuLink
+                  className={cn(navigationMenuTriggerStyle(), "cursor-pointer")}
+                  onClick={() => {
+                    navigate(route.path);
+                  }}
+                >
+                  {route.label}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+      <Sheet>
+        <SheetTrigger>
+          <div className="md:hidden">
+            <GiHamburgerMenu />
+            <div className="hamburger-icon"></div>
+          </div>
+        </SheetTrigger>
+        <SheetContent className="w-1/3">
+          <NavigationMenu>
+            <NavigationMenuList className="flex flex-col pt-10">
+              {routes.map((route) => (
+                <SheetClose key={route.label}>
+                  <NavigationMenuItem key={route.path}>
+                    <NavigationMenuLink
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "cursor-pointer"
+                      )}
+                      onClick={() => {
+                        navigate(route.path);
+                      }}
+                    >
+                      {route.label}
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                </SheetClose>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
+        </SheetContent>
+      </Sheet>
     </div>
   );
 };
