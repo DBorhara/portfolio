@@ -12,7 +12,6 @@ import { Lightbulb, LightbulbOff } from "lucide-react";
 
 const ModeToggle: React.FC = () => {
   const { setTheme, theme } = useTheme();
-  console.log("theme", theme);
 
   return (
     <div>
