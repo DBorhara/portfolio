@@ -34,7 +34,7 @@ const Resume: React.FC = () => {
     <div className="flex flex-col items-center border border-purple-500 shadow-2xl p-8 rounded-lg max-w-prose mx-auto mt-10">
       <h1 className="text-5xl font-bold mb-5 text-purple-500">Depak Borhara</h1>
 
-      <div className="grid grid-cols-4 gap-6 justify-items-center text-sm dark:text-gray-200 mb-6">
+      <div className="grid md:grid-cols-4 md:gap-6 justify-items-center text-sm dark:text-gray-200 md:mb-6">
         {ICONS.map((icon, idx) => (
           <ContactIcon key={idx} {...icon} />
         ))}
