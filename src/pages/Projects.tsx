@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
           <CardFooter className="flex justify-center items-center">
             <Button
               onClick={() =>
-                window.open("https://odin-s74p.onrender.com", "_blank")
+                window.open("https://odin-indol.vercel.app/", "_blank")
               }
               className="text-xl inline-flex items-center justify-evenly w-2/5 mt-6 mx-3/100 mb-0 rounded-md bg-purple-700 text-gray-200 hover:bg-gray-200 hover:text-purple-700 h-8 cursor-pointer no-underline border-none"
             >
