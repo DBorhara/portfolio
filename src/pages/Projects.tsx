@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
           <CardContent className="flex flex-col justify-center items-center">
             <div>Language: Typescript</div>
             <div className="text-xs pt-5 flex flex-col">
-              <p>URL:</p> <p>https://odin-s74p.onrender.com</p>
+              <p>URL:</p> <p>https://odin-indol.vercel.app/</p>
             </div>
           </CardContent>
           <CardFooter className="flex justify-center items-center">
