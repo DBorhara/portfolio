@@ -83,7 +83,7 @@ const Resume: React.FC = () => {
       <Section header="Work Experience">
         <Box
           title="NYC Tech Talent Pipeline | Lead Instructor - Contract | Remote - New
-            York, NY (5/23 – 8/23)"
+            York, NY (2/23 – 9/23)"
         >
           <ul className="dark:text-white">
             <li className="mb-3.5">
