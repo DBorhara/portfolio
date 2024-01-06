@@ -60,7 +60,7 @@ const Resume: React.FC = () => {
       <Section header="Skills">
         <div className="grid grid-cols-2 gap-4">
           <Box title="Languages:">
-            JavaScript(ES6), TypeScript, Ruby, Golang, HTML, CSS, Markdown
+            JavaScript(ES6), TypeScript, Golang, Rust, Ruby, HTML, CSS, Markdown
           </Box>
 
           <Box title="Front-End Frameworks:">
@@ -82,24 +82,52 @@ const Resume: React.FC = () => {
 
       <Section header="Work Experience">
         <Box
+          title="IdeaHive Consulting | Software Engineer Consultant | New York,
+            NY (3/20 – Present)"
+        >
+          <ul className="dark:text-white">
+            <li className="mb-3.5">
+              Engineer robust full-stack web applications using Next.js
+              (leveraging server-side rendering for performance optimization),
+              Express (custom middleware development), Node.js (efficient
+              event-driven architecture), and PostgreSQL (complex data modeling
+              and optimization).
+            </li>
+            <li className="mb-3.5">
+              Design and implement back-end and database infrastructure with
+              enhanced features for centralized data management, employing
+              RESTful API principles and ensuring data integrity, fidelity, and
+              security.
+            </li>
+            <li className="mb-3.5">
+              Implement modern engineering and UX/UI principles, including clean
+              code practices, design patterns, and refactoring techniques, to
+              enhance the readability and maintainability of codebases.
+            </li>
+          </ul>
+        </Box>
+        <Box
           title="NYC Tech Talent Pipeline | Lead Instructor - Contract | Remote - New
             York, NY (2/23 – 9/23)"
         >
           <ul className="dark:text-white">
             <li className="mb-3.5">
-              Educated and mentored a cohort of 45 students in cutting-edge
-              full-stack web development technologies such as React, Redux,
-              Node, Express, and Postgres.
+              Led the instructional design and delivery of an advanced
+              full-stack web development curriculum for 45 students, focusing on
+              React (including hooks and context API), Redux (middleware
+              integration), Node.js (async programming, RESTful API design),
+              Express (middleware, routing), and PostgreSQL (advanced querying,
+              optimization).
             </li>
             <li className="mb-3.5">
-              Managed a team of 5 teaching assistants to ensure students
-              received expert guidance and support throughout their learning
-              journey.
+              Directed a team of 5 teaching assistants, implementing agile
+              methodologies to streamline student support processes, enhancing
+              personalized guidance, and reducing issue resolution time by 30%.
             </li>
             <li className="mb-3.5">
-              Authored curriculum materials by creating 32 lesson plans and
-              exercises to align with current industry standards and best
-              practices
+              Overhauled 32 outdated lesson plans and exercises, integrating
+              modern web development trends and industry best practices,
+              resulting in a 25% increase in student satisfaction ratings.
             </li>
           </ul>
         </Box>
@@ -110,44 +138,26 @@ const Resume: React.FC = () => {
         >
           <ul className="dark:text-white">
             <li className="mb-3.5">
-              Worked within a core team of 4, collaborating with a broader
-              cross-functional group of over 25 developers and product managers,
-              to prioritize and develop features for a large-scale consumer
-              lending platform.
+              Collaborated in a cross-functional agile team with product
+              managers, UX/UI designers, and engineers to prioritize and execute
+              development of user-centric features in Ruby (optimizing MVC
+              architecture) and TypeScript, coupled with Go for complex business
+              logic in a high-volume consumer lending platform.
             </li>
             <li className="mb-3.5">
-              Launched 4 innovative Ruby on Rails and Go features and resolved 5
-              critical production bugs.
+              Spearheaded the deployment of over 15 innovative features using
+              Ruby on Rails and Go, focusing on scalability and security
+              enhancements.
             </li>
             <li className="mb-3.5">
-              Maintained 97% test coverage through extensive unit and
-              integration testing using RSpec and Capybara.
+              Actively participated in on-call rotations, managing 2
+              production-grade incidents, employing rapid response strategies to
+              ensure continuity and minimize user impact.
             </li>
             <li className="mb-3.5">
-              Efficiently addressed 2 production-grade incidents as an on-call
-              team member, ensuring smooth resolution.
-            </li>
-          </ul>
-        </Box>
-
-        <Box
-          title="Borhara Tech Consulting | Software Engineer Consultant | New York,
-            NY (3/20 – 6/21)"
-        >
-          <ul className="dark:text-white">
-            <li className="mb-3.5">
-              Developed and designed state-of-the-art full-stack web
-              applications using React for the frontend, Express and Node.js for
-              the backend, and Postgres for database management.
-            </li>
-            <li className="mb-3.5">
-              Architected and rolled out client-side portals enabling efficient
-              data access and accounting automation.
-            </li>
-            <li className="mb-3.5">
-              Leveraged modern UI/UX design principles and frameworks to
-              optimize performance metrics, user satisfaction, and data
-              accessibility.
+              Mentored 2 new engineers in Ruby on Rails and Go, emphasizing best
+              practices in code efficiency and modular design, accelerating
+              their onboarding process by 10%
             </li>
           </ul>
         </Box>
