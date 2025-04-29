@@ -24,6 +24,7 @@ export type SkillName =
   | "Postgres"
   | "Git"
   | "Github"
+  | "Lua"
   | "Npm"
   | "Bootstrap"
   | "Vercel"
@@ -50,7 +51,7 @@ export interface SectionProps {
 }
 
 export interface IconProps {
-  data: any;
+  data: unknown;
   label: string;
   link?: string;
   loop?: boolean;

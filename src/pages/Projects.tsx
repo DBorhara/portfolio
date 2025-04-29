@@ -2,17 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Octokit } from "octokit";
 import RepoCard from "@/components/RepoCard";
 import Loading from "./Loading";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
-
-import { BsBrowserChrome } from "react-icons/bs";
 
 const Projects: React.FC = () => {
   const [starredRepos, setStarredRepos] = useState([]);
