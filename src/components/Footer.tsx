@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         Developed by <b className="text-purple-600">Depak Borhara</b>
       </h4>
       <h4 className="mx-6 font-medium">
-        Copyright <b className="text-purple-600">&copy; 2023</b> DB
+        Copyright <b className="text-purple-600">&copy; 2025</b> DB
       </h4>
       <div className="flex w-44 text-lg justify-evenly items-center">
         <Link

@@ -14,7 +14,7 @@ import { DownloadCloud } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ICONS: IconProps[] = [
-  { data: phone, label: "917-2047-1702" },
+  { data: phone, label: "551-251-9791" },
   { data: email, label: "depakborhara@gmail.com", loop: true },
   {
     data: linkedin,
@@ -48,19 +48,26 @@ const Resume: React.FC = () => {
 
       <Section header="Professional Summary">
         <p className="text-lg dark:text-white">
-          Adept software engineer with over three years of experience in
-          creating, teaching, deploying, and maintaining large-scale distributed
-          applications in the e-commerce and fintech sectors. Demonstrated
-          leadership skills, strong work ethic, and extensive understanding of
-          software development best practices. Capable of adapting to new
-          technologies and contributing to software engineering teams.
+          I am a detail-oriented and solutions-driven Software Engineer with a
+          strong foundation in computer science and mathematics, currently
+          advancing expertise through a B.S. in Computer Science with a Math
+          minor at Rutgers University. Formerly in a people-focused career, I
+          bring a unique blend of analytical rigor and empathetic communication
+          to the tech space. Skilled in Python, JavaScript, and systems-level
+          tooling (Neovim, tmux, Zsh), with hands-on experience in custom
+          tooling, network security (UniFi), and IoT development (Raspberry Pi).
+          Passionate about creating maintainable, efficient code, and automating
+          systems to solve real-world problems. Proven ability to learn fast,
+          collaborate across disciplines, and lead through curiosity and
+          resilience. Seeking opportunities where innovation meets impact,
+          especially in education, embedded systems, or developer tooling.
         </p>
       </Section>
 
       <Section header="Skills">
         <div className="grid grid-cols-2 gap-4">
           <Box title="Languages:">
-            JavaScript(ES6), TypeScript, Golang, Rust, Ruby, HTML, CSS, Markdown
+            JavaScript(ES6), TypeScript, Python, Lua, Ruby, Markdown
           </Box>
 
           <Box title="Front-End Frameworks:">
@@ -74,38 +81,11 @@ const Resume: React.FC = () => {
 
           <Box title="Testing:">Capybara, Jest, Playwright, RSpec</Box>
 
-          <Box title="Tools:">
-            CircleCI, Docker, Git, Github, Prisma ORM, OAuth, Sequelize ORM
-          </Box>
+          <Box title="Tools:">CircleCI, Docker, Git, Github, Sequelize ORM</Box>
         </div>
       </Section>
 
       <Section header="Work Experience">
-        <Box
-          title="IdeaHive Consulting | Software Engineer Consultant | New York,
-            NY (3/20 – Present)"
-        >
-          <ul className="dark:text-white">
-            <li className="mb-3.5">
-              Engineer robust full-stack web applications using Next.js
-              (leveraging server-side rendering for performance optimization),
-              Express (custom middleware development), Node.js (efficient
-              event-driven architecture), and PostgreSQL (complex data modeling
-              and optimization).
-            </li>
-            <li className="mb-3.5">
-              Design and implement back-end and database infrastructure with
-              enhanced features for centralized data management, employing
-              RESTful API principles and ensuring data integrity, fidelity, and
-              security.
-            </li>
-            <li className="mb-3.5">
-              Implement modern engineering and UX/UI principles, including clean
-              code practices, design patterns, and refactoring techniques, to
-              enhance the readability and maintainability of codebases.
-            </li>
-          </ul>
-        </Box>
         <Box
           title="NYC Tech Talent Pipeline | Lead Instructor - Contract | Remote - New
             York, NY (2/23 – 9/23)"
@@ -165,9 +145,17 @@ const Resume: React.FC = () => {
 
       <Section header="Education">
         <div className="space-y-4">
+          <Box title="Rutgers University | Bachelor of Science - Computer Science | Minor: Math | New Brunswick,NJ | 5/27">
+            Actively pursuing a rigorous Computer Science degree with a focus on
+            software engineering, algorithms, and systems programming.
+            Complementing my technical education with a Mathematics minor to
+            strengthen analytical and problem-solving skills. Passionate about
+            building scalable solutions, automating workflows, and applying
+            theory to real-world development challenges.
+          </Box>
           <Box
             title="Fullstack Academy | Certificate of Completion | Web Development
-              Immersive | New York, NY (11/19 - 2/20)"
+              Immersive | New York, NY | 2/20"
           >
             Successfully completed an intensive 17-week program, gaining
             expertise in modern web development technologies, including the PERN
@@ -176,7 +164,7 @@ const Resume: React.FC = () => {
 
           <Box
             title="CUNY City College of NY | Bachelor of Arts - Political Science |
-              Magna Cum Laude | New York, NY (2014)"
+              Magna Cum Laude | New York, NY | 2014"
           >
             {" "}
           </Box>
@@ -187,7 +175,7 @@ const Resume: React.FC = () => {
         <div className="space-y-4">
           <Box
             title="Pursuit | Technical Volunteer | Long Island City, NY (2/20 –
-              Present)"
+              6/23)"
           >
             <ul className="dark:text-white">
               <li className="mb-3.5">

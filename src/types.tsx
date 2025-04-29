@@ -16,22 +16,20 @@ export interface ListItemProps
 }
 
 export type SkillName =
-  | "NextJS"
   | "React"
   | "Javascript"
   | "Typescript"
-  | "Go"
   | "Node"
   | "Express"
   | "Postgres"
   | "Git"
   | "Github"
   | "Npm"
-  | "Figma"
   | "Bootstrap"
   | "Vercel"
   | "Ruby"
   | "RubyOnRails"
+  | "Python"
   | "TailwindCSS";
 
 export interface SkillProps {

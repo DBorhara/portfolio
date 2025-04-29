@@ -38,10 +38,10 @@ const Home: React.FC = () => {
             </span>
             <br />
             <br />I am fluent in <b>Javascript</b> and <b>Typescript</b>,
-            proficient in <b>Go</b>, and I am working on getting a new role
-            where I can utilize these languges.
+            proficient in <b>Python</b>, and I am currently working on getting
+            my B.S. in Computer Science from Rutgers University - New Brunswick.
             <br />
-            <br />I plan to learn <b>Rust</b>, and <b>Zig</b> in the near
+            <br />I plan to learn <b>Java</b>, and <b>Rust</b> in the near
             future. <br />
             <br />
             <div className="flex justify-center items-center">

@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import {
   SiBootstrap,
   SiExpress,
-  SiFigma,
   SiGit,
   SiGithub,
-  SiGo,
   SiJavascript,
-  SiNextdotjs,
+  SiLua,
   SiNpm,
   SiPostgresql,
+  SiPython,
   SiReact,
   SiRuby,
   SiRubyonrails,
@@ -23,12 +22,12 @@ import { SkillProps } from "../types";
 
 const Skills: React.FC<SkillProps> = ({ name, url }) => {
   const icon = {
-    NextJS: <SiNextdotjs />,
     React: <SiReact />,
     RubyOnRails: <SiRubyonrails />,
     Javascript: <SiJavascript />,
     Typescript: <SiTypescript />,
-    Go: <SiGo />,
+    Python: <SiPython />,
+    Lua: <SiLua />,
     Ruby: <SiRuby />,
     Node: <DiNodejs />,
     Express: <SiExpress />,
@@ -37,7 +36,6 @@ const Skills: React.FC<SkillProps> = ({ name, url }) => {
     Github: <SiGithub />,
     TailwindCSS: <SiTailwindcss />,
     Npm: <SiNpm />,
-    Figma: <SiFigma />,
     Bootstrap: <SiBootstrap />,
     Vercel: <SiVercel />,
   };

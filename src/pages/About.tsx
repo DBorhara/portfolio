@@ -14,20 +14,27 @@ const About: React.FC = () => {
             Get to <b className=" text-purple-500">know</b> me!
           </h1>
           <p>
-            Hi, my name is <b>Depak Borhara</b> and I am from NYC/NJ. I'm a{" "}
-            <b>Full stack web developer</b> with 3 years of experience.
+            Hi, my name is <b>Depak Borhara</b>, and I'm from the NYC/NJ area.
+            I'm a <b>Software Engineer</b> with 3 years of professional
+            experience, passionate about turning ideas into tangible, impactful
+            products. I love the process of iteration, continuous learning, and
+            getting better with each project. I genuinely enjoy collaborating
+            with others — both learning from my peers and helping others grow —
+            and I have a strong passion for building efficient tools that save
+            time, streamline processes, and reduce costs.
             <br />
             <br />
-            I love turning ideas into tangible products, and enjoy the process
-            of iteration, learning and getting better each time. I also enjoy
-            working with other people, and both learning and teaching. Lastly, I
-            have a strong passion for efficiency and making tools that help save
-            time and money.
+            Currently, I'm further deepening my technical foundation by pursuing
+            a degree in Computer Science at Rutgers University, with a minor in
+            Mathematics. This return to formal education reflects my commitment
+            to expanding my skills, tackling more complex problems, and building
+            a long-term career in tech.
             <br />
             <br />
-            In my personal life, I am a husband and father to 2 little girls! I
-            try my best each day to show them hard-work, creativity, and a
-            little bit luck is all you need to be happy.
+            Outside of work and school, I'm a proud husband and father to three
+            little girls. Every day, I strive to show them that with hard work,
+            creativity, and a little bit of luck, you can achieve happiness and
+            success.
             <br />
           </p>
         </div>
