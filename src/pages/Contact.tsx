@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
         import.meta.env.VITE_SERVICE_ID!,
         import.meta.env.VITE_TEMPLATE_ID!,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_API_KEY!
+        import.meta.env.VITE_EMAILJS_API_KEY!,
       );
       if (emailResponse.status === 200) {
         toast({

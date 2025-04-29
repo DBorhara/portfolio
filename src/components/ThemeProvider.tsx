@@ -28,7 +28,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({
   ...props
 }) => {
   const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
+    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme,
   );
 
   useEffect(() => {
